@@ -10,10 +10,10 @@ And  user am able to submit signin button
 And  user can enter the location & search it 
 And  user can print all the price value
 And  user can select the fifth property on list
-And  user can verify the agent logo, name & phone no
+And  user can verify the agent logo, name & phone no "Logo,Agent Name,Phone no"
 And user can click on MyZoopla
 And user can able to click signout button
-Then  user can verify the logout title 
+Then  user can verify the logout title "Zoopla > Search Property to Buy, Rent, House Prices, Estate Agents"
 And Close the browser
 
 Examples:

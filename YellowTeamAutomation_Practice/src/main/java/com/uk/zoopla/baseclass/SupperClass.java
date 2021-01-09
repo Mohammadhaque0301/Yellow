@@ -15,14 +15,15 @@ public class SupperClass {
 	
 	public static WebDriver driver;  //import org.openqa.selenium.WebDriver;
 	public static Logger logger;
+	public static Properties prop;
 	
-	public  SupperClass() {    // costactor for initialized the logger
+	public  SupperClass() {    // Constactor for initialized the logger.
 	
-	Logger logger = Logger.getLogger("Qa-Tester");   // String
-	PropertyConfigurator.configure("log4j.properties"); //location of log4j.properties
+	logger = Logger.getLogger("Enamul Haque");   // String
+	PropertyConfigurator.configure("Log4j.properties"); //location of log4j.properties
 	}
 	  public static void initialization() throws Throwable {
-		Properties prop = new  Properties();
+		prop = new  Properties();
 		FileInputStream config = new FileInputStream("Config.properties"); //change to throws Throwable
 		prop.load(config);
 		
@@ -42,8 +43,8 @@ public class SupperClass {
 	  	
 			driver.manage().window().maximize();
 			 driver.manage().deleteAllCookies();
-			   driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
-			   driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+			   //driver.manage().timeouts().pageLoadTimeout(10, TimeUnit.SECONDS);
+			   //driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		
 		  
 	  		  

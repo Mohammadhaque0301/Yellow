@@ -67,7 +67,7 @@ public class PageFactoryClass extends SupperClass {
 	return clicksearch;
     }
     
-	@FindBy(xpath="//*[contains(@class,'css-16tn2ye e2uk8e19')]")
+	@FindBy(xpath="//*[contains(@class,'css-qmlb99-CardHeader e2uk8e9')]")
 	@CacheLookup
 	private List <WebElement>printallprice;
 	
@@ -88,18 +88,17 @@ public class PageFactoryClass extends SupperClass {
     public WebElement getClickfifthproperty() {
 	return clickfifthproperty;
 	}*/
-	@FindBy(xpath = "(//*[contains(@class,'e2uk8e24 css-1tw68d1 e33dvwd0')])[5]")
+	@FindBy(xpath = "//*[@class='e2uk8e4 css-16zqmgg-StyledLink-Link-FullCardLink e33dvwd0']")
 	@CacheLookup
-	private WebElement clickfifthproperty;
-      public WebElement getClickfifthproperty() {
+	private List <WebElement> clickfifthproperty;
+	public List<WebElement> getClickfifthproperty() {
 		return clickfifthproperty;
 	}
-
-	@FindBy(xpath = "//*[@class='js-lazy-loaded']")
+	/*@FindBy(xpath = "//*[@class='js-lazy-loaded']")
 	private WebElement verifylogo;
 	public WebElement getVerifylogo() {
 		return verifylogo;
-	}
+	}*/
     
     @FindBy(xpath ="(//*[@class='css-jm7194 el4rvi44'])[1]")
    	private WebElement mouseHovermyzoopla;
